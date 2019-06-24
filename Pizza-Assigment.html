@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+    Pizza Assigment
+    </title>
+    <link href="CssPage.css" type="text/css" rel="stylesheet">
+    </head>
+    
+    
+<body>
+    
+
+
+
+<header> <h2>"Speedi-Drone Pizza" Custom Pizza Order Form</h2>
+    <p>Design your ver own pizza with this handy online form.We'll <br />
+    have it dropped in your lap in 10 minutes or less or our name isn't<br />
+        <strong>Speedi-Drone Pizza</strong></p>
+    </header>
+  <form name="order" action="http://forms.miketackett.dx.am/pizzaOrder.php" method="post" id="porder"> 
+    <fieldset>
+   <legend> Pizza Details </legend>
+    <br />
+
+Quantity: <input type="number" name="qty">
+        <br />
+        <br />
+    Size: &nbsp; <select name="size">
+  <option value="Personal">Personal 4 slices</option>
+  <option value="Small">Small 6 slices</option>
+  <option value="Medium">Medium 8 slices</option>
+  <option value="Large">Large 10 slices</option>
+  <option value="Glutton">Glutton 12 slices</option>
+</select>
+        
+        
+    <br />
+        <br />
+        <fieldset>
+    <legend>Bases (choose one):</legend>
+    <input type="radio" name="base" value="Red-sauce"> Red sauce  &nbsp;
+    <input type="radio" name="base" value="White-sauce"> White sauce &nbsp;
+    <input type="radio" name="base" value="BBQ-sauce"> BQQ sauce &nbsp;
+    <input type="radio" name="base" value="Garlic-rub"> Garlic rub &nbsp;
+    <input type="radio" name="base" value="Pesto-base"> Pesto base <br />
+    <input type="radio" name="base" value="Castor-oil"> Castor oil
+            </fieldset>
+    <br />
+        
+        
+        <fieldset>
+    <legend>Cheeses (choose as many as you want):</legend>
+    <br />
+    <input type="checkbox" name="cheese[]" value="Mozzarella" checked > Mozzarella &nbsp;
+    <input type="checkbox" name="cheese[]" value="Parmesan"> Parmesan &nbsp;
+    <input type="checkbox" name="cheese[]" value="Gorgonzola" > Gorgonzola &nbsp;
+    <input type="checkbox" name="cheese[]" value="Asiago"> Asiago &nbsp;
+    <input type="checkbox" name="cheese[]" value="Limburger" > Limburger
+            </fieldset>
+     <br />
+        
+        
+        <fieldset>
+    <legend>Meats (choose as many as you want):</legend>
+    <br />
+    <input type="checkbox" name="meat[]" value="Pepperoni" checked> Pepperoni &nbsp;
+    <input type="checkbox" name="meat[]" value="Italian-Sausage"> Italian Sausage &nbsp;
+    <input type="checkbox" name="meat[]" value="Canadian-Bacon"> Canadian Bacon &nbsp;
+    <input type="checkbox" name="meat[]" value="Ground-Beef"> Ground Beef
+            </fieldset>
+    <br />
+        
+        
+        <fieldset>
+    <legend>Veggies (choose as many as you want):</legend>
+    <br />
+    <input type="checkbox" id="Green-Peppers" name="veggies[]"> Green Peppers &nbsp;
+    <input type="checkbox" id="Mushrooms"     name="veggies[]"> Mushrooms &nbsp;
+    <input type="checkbox" id="Onion"  name="veggies[]"> Onion &nbsp;
+    <input type="checkbox" id="Pineapple" name="veggies[]"> Pineapple &nbsp;
+    <input type="checkbox" id="Jalapenos" name="veggies[]"> Jalapenos 
+            </fieldset>
+    <br />
+        
+        
+        </fieldset>
+    <br />
+<br />
+    
+    
+    <fieldset>
+   <legend> Customer information </legend>
+    
+        <fieldset>
+    <legend>Important</legend>
+    <br/>
+    Enter a valid e-mail addres. Receipts and junk  mail will be sent to this addres: 
+    <br />
+    Email:<input type="email" size="25" required name="emailaddress"> 
+            </fieldset>
+        <br />
+    Name:   &nbsp; <input type="text" size="25" name="customername">
+    <br />
+    Addres:  <input type="text" size="25" name="address" required>
+          <br />
+    City:  &nbsp;  <input type="text" size="25" name="city">
+    <br />
+    Phone:  &nbsp;<input type="tel" size="25" name="phone">
+        </fieldset>
+   
+    <br />
+    Tell us how we're doing. If we like your comments, we will send you a <strong>free</strong> Speedi-Drone plush toy!
+    <br />
+    <textarea name="comments" maxlength="250" >No more than 250 characters long</textarea>
+    <br />
+    <input type="submit"> &nbsp; <input type="reset">
+    </form> 
+    </body>
+</html>
